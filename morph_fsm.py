@@ -136,13 +136,13 @@ class MorphFSM(object):
             reps = [w for w, k in words if k == 'reply']
             return ' '.join(reps) if reps else ''
 
-        nouns   = [w for w, k in words if k == 'noun']
-        verbs   = [w for w, k in words if k == 'verb']
-        whs     = [w for w, k in words if k == 'wh']
+        nouns = [w for w, k in words if k == 'noun']
+        verbs = [w for w, k in words if k == 'verb']
+        whs = [w for w, k in words if k == 'wh']
         markers = [w for w, k in words if k == 'marker']
 
-        past    = 'ӨТКЕН' in markers
-        abl_mk  = 'ШЫҒЫС' in markers
+        past = 'ӨТКЕН' in markers
+        abl_mk = 'ШЫҒЫС' in markers
 
         # сұраулы токен бар болса, етістік үшінші жақта жіктеледі
         # және бастауыш шықпайды (4.3-тармақ)
